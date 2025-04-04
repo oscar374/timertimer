@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .mainInfo {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .mainInfo p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="row">
+        <p>time start</p>
+        <input type="text" class="startHour">
+        <input type="text" class="startMinute">
+    </div>
+    <p>HOW MUCH TIME</p>
+    <input type="text" class="time">
+    <button onClick="startTimer()">Start</button>
+
+    <div class="mainInfo">
+        <p class="startInfo"> </p>
+        <p class ="endInfo"> </p>
+        <p class="remainingInfo"> </p>
+    </div>
+</body>
+</html>
